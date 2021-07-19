@@ -14,6 +14,10 @@ const config = {
       {
         use: "babel-loader",
         test: /\.js$/ // will make sure that only uses javascript for our project
+      },
+      {
+        use: ["style-loader", "css-loader"],
+        test: /\.css$/
       }
     ]
   }
